@@ -38,12 +38,19 @@ body{
     display: grid;
     grid-template-columns:200px 1fr;
   }
+  /*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+  ##Device = 대부분의 스마트폰 모바일 기기(세로)
+  ##Screen = 320px에서 479px 사이
+  */
 
-  @media(max-width: 700px){
+  @media (min-width: 320px) and (max-width: 480px) {
     #grid{
       display:block;
     }
     ol{
       border-right:none;
     }
-  }
+  
+  //
